@@ -3,201 +3,169 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KALTERA AI | AI Automation Agency</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<title>KALTERA AI — AI Software & Digital Solutions</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif}
+body{background:#ffffff;color:#0f172a}
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Poppins,sans-serif;
-}
-
-body{
-background:#0B0F1A;
-color:white;
-}
-
-/* NAVBAR */
-
+/* NAV */
 nav{
+position:fixed;
+top:0;
+width:100%;
+background:white;
+padding:18px 8%;
 display:flex;
 justify-content:space-between;
-padding:20px 8%;
-position:fixed;
-width:100%;
-background:rgba(0,0,0,.5);
-backdrop-filter:blur(10px);
-z-index:1000;
+align-items:center;
+box-shadow:0 4px 20px rgba(0,0,0,.05);
+z-index:999;
 }
-
-.logo{
-font-weight:600;
-font-size:20px;
-}
-
-nav ul{
-display:flex;
-gap:30px;
-list-style:none;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-opacity:.8;
-}
+.logo{font-weight:700;font-size:20px}
+.logo span{color:#2563eb}
+nav a{margin-left:28px;text-decoration:none;color:#111827;font-weight:500}
 
 /* HERO */
-
 .hero{
-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
+padding:140px 8% 120px;
+background:linear-gradient(135deg,#020617,#0f172a);
+color:white;
 text-align:center;
-background:linear-gradient(180deg,#0B0F1A,#111633);
 }
-
 .hero h1{
 font-size:48px;
-margin-bottom:20px;
+max-width:850px;
+margin:auto;
+line-height:1.2;
 }
-
 .hero p{
-opacity:.7;
+margin-top:18px;
+opacity:.8;
 }
-
-.btn{
+.cta{
+margin-top:30px;
 display:inline-block;
-margin-top:25px;
-padding:14px 30px;
-background:#6C63FF;
-border-radius:8px;
+background:#2563eb;
+padding:14px 28px;
+border-radius:10px;
 color:white;
 text-decoration:none;
+font-weight:600;
 }
 
-/* SECTION */
+/* SECTIONS */
+.section{padding:90px 8%}
+.title{text-align:center;font-size:34px;margin-bottom:50px}
 
-.section{
-padding:100px 8%;
-}
-
-.title{
-text-align:center;
-font-size:32px;
-margin-bottom:60px;
-}
-
+/* GRID */
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
 }
 
+/* CARD */
 .card{
-background:#111633;
-padding:30px;
-border-radius:12px;
+background:white;
+padding:28px;
+border-radius:14px;
+box-shadow:0 10px 30px rgba(0,0,0,.05);
 transition:.3s;
 }
-
 .card:hover{
 transform:translateY(-5px);
 }
 
-/* WORK */
-
-.work{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:20px;
+/* INDUSTRIES */
+.badge{
+background:#eff6ff;
+padding:12px 16px;
+border-radius:30px;
+display:inline-block;
+margin:6px;
 }
 
-.work-card{
-background:#111633;
-padding:25px;
-border-radius:12px;
-}
-
-/* CTA */
-
-.cta{
+/* DARK CTA */
+.dark{
+background:#020617;
+color:white;
 text-align:center;
-padding:100px 20px;
-background:#111633;
+padding:90px 20px;
+}
+
+/* FORM */
+form{max-width:520px;margin:auto}
+input,textarea{
+width:100%;
+padding:14px;
+margin-bottom:14px;
+border-radius:8px;
+border:1px solid #e5e7eb;
+}
+button{
+background:#2563eb;
+color:white;
+border:none;
+padding:14px;
+border-radius:8px;
+width:100%;
+font-weight:600;
 }
 
 /* FOOTER */
-
 footer{
+background:#020617;
+color:white;
+padding:50px 8%;
 text-align:center;
-padding:40px;
-opacity:.6;
 }
 
 /* WHATSAPP */
-
 .whatsapp{
 position:fixed;
 bottom:20px;
 right:20px;
 background:#25D366;
-padding:15px;
+color:white;
+padding:15px 17px;
 border-radius:50%;
 font-size:20px;
+text-decoration:none;
+box-shadow:0 10px 20px rgba(0,0,0,.2);
 }
-
 </style>
 
 </head>
-
 <body>
 
 <nav>
-
-<div class="logo">KALTERA AI</div>
-
-<ul>
-<li><a href="#services">Services</a></li>
-<li><a href="#work">Work</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-
+<div class="logo">KALTERA <span>AI</span></div>
+<div>
+<a href="#services">Services</a>
+<a href="#industries">Industries</a>
+<a href="#work">Work</a>
+<a href="#contact">Contact</a>
+</div>
 </nav>
 
 <section class="hero">
-
-<div>
-
-<h1>AI Automation for Modern Businesses</h1>
-
-<p>Lead Capture • WhatsApp Automation • AI Agents • CRM Systems</p>
-
-<a class="btn" href="https://wa.me/919836555863">Free Consultation</a>
-
-</div>
-
+<h1>AI Automation That Captures Leads & Books Customers Automatically</h1>
+<p>AI • Software • Digital Solutions</p>
+<a class="cta" href="#contact">Free Consultation</a>
 </section>
 
-<section class="section" id="services">
-
+<section id="services" class="section">
 <h2 class="title">Services</h2>
 
 <div class="grid">
 
 <div class="card">
 <h3>WhatsApp Automation</h3>
-<p>Auto reply and booking system</p>
-</div>
-
-<div class="card">
-<h3>AI Lead Capture</h3>
-<p>Capture and qualify leads automatically</p>
+<p>Auto replies, lead capture & booking system</p>
 </div>
 
 <div class="card">
@@ -206,13 +174,18 @@ font-size:20px;
 </div>
 
 <div class="card">
+<h3>Lead Capture AI</h3>
+<p>Automatically capture & qualify leads</p>
+</div>
+
+<div class="card">
 <h3>CRM Automation</h3>
-<p>Followup and pipeline automation</p>
+<p>Pipeline and followup automation</p>
 </div>
 
 <div class="card">
 <h3>Appointment Booking</h3>
-<p>Auto scheduling system</p>
+<p>Automatic scheduling system</p>
 </div>
 
 <div class="card">
@@ -221,55 +194,86 @@ font-size:20px;
 </div>
 
 </div>
-
 </section>
 
-<section class="section" id="work">
+<section id="industries" class="section">
+<h2 class="title">Industries We Serve</h2>
 
-<h2 class="title">Our Work</h2>
+<div style="text-align:center">
 
-<div class="work">
-
-<div class="work-card">
-<h3>Clinic WhatsApp Bot</h3>
-<p>Patients book appointments automatically</p>
-</div>
-
-<div class="work-card">
-<h3>Lead Qualification AI</h3>
-<p>Auto capture and qualify leads</p>
-</div>
-
-<div class="work-card">
-<h3>Booking Automation</h3>
-<p>Automatic appointment scheduling</p>
-</div>
-
-<div class="work-card">
-<h3>Instagram Automation</h3>
-<p>Auto reply to DMs</p>
-</div>
+<span class="badge">Clinics & Doctors</span>
+<span class="badge">Real Estate</span>
+<span class="badge">Coaching Institutes</span>
+<span class="badge">Agencies</span>
+<span class="badge">Local Businesses</span>
+<span class="badge">Service Businesses</span>
 
 </div>
 
 </section>
 
-<section class="cta" id="contact">
+<section id="work" class="section">
+<h2 class="title">What We Automate</h2>
 
+<div class="grid">
+
+<div class="card">
+<h3>Lead Capture</h3>
+<p>Capture leads from WhatsApp & website</p>
+</div>
+
+<div class="card">
+<h3>Auto Followups</h3>
+<p>Never lose a potential customer</p>
+</div>
+
+<div class="card">
+<h3>Appointment Booking</h3>
+<p>Auto scheduling without manual work</p>
+</div>
+
+<div class="card">
+<h3>Customer Qualification</h3>
+<p>AI filters high quality leads</p>
+</div>
+
+<div class="card">
+<h3>CRM Updates</h3>
+<p>Auto update your pipeline</p>
+</div>
+
+<div class="card">
+<h3>Notifications</h3>
+<p>Instant alerts for new leads</p>
+</div>
+
+</div>
+</section>
+
+<section class="dark">
 <h2>Automate Your Business Today</h2>
+<p style="margin-top:10px;opacity:.8">Start capturing leads automatically</p>
+<a class="cta" href="#contact">Book Free Consultation</a>
+</section>
 
-<p>Get AI automation for your business</p>
+<section id="contact" class="section">
+<h2 class="title">Contact Us</h2>
 
-<a class="btn" href="https://wa.me/919836555863">Chat with KALTERA AI</a>
+<form>
+<input placeholder="Your Name">
+<input placeholder="Business Type">
+<input placeholder="WhatsApp Number">
+<textarea placeholder="What automation do you need?"></textarea>
+<button>Request Free Consultation</button>
+</form>
 
 </section>
 
 <footer>
-
-KALTERA AI  
-AI Automation Agency  
-hello@kalteraai.com
-
+<h3>KALTERA AI</h3>
+<p style="margin-top:10px">AI • Software • Digital Solutions</p>
+<p style="margin-top:20px">hello@kalteraai.com</p>
+<p>www.kalteraai.com</p>
 </footer>
 
 <a class="whatsapp" href="https://wa.me/919836555863">💬</a>
